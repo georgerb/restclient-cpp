@@ -304,6 +304,7 @@ RestClient::Connection::performCurlRequest(const std::string& uri) {
 
   /** set query URL */
   curl_easy_setopt(this->curlHandle, CURLOPT_URL, url.c_str());
+  curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0L);
   /** set callback function */
   curl_easy_setopt(this->curlHandle, CURLOPT_WRITEFUNCTION,
                    Helpers::write_callback);
