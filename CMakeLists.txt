@@ -1,7 +1,10 @@
 
 cmake_minimum_required(VERSION 3.10.0)
 
-project(restclient-cpp)
+project(restclient-cpp
+  VERSION 0.5.0
+  HOMEPAGE_URL "http://code.mrtazz.com/restclient-cpp"
+)
 set(restclient-cpp_VENDOR "d@unwiredcouch.com")
 set(PROJECT_VENDOR "${restclient-cpp_VENDOR}")
 
